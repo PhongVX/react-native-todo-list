@@ -5,14 +5,14 @@ import {
     Text
 } from 'react-native';
 
-interface HomeProps {
+interface TodoProps {
 
 }
 
-export default function Home(props:HomeProps) {
+export default function Todo(props:TodoProps) {
     return (
         <View style={styles.body}>
-            <Text style={styles.title}>Home</Text>
+            <Text style={styles.title}>Todo</Text>
         </View>
     )
 }
@@ -22,10 +22,11 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#ffffff'
     },
     title:{
         fontSize: 30,
-        color: '#ffffff',
+        color: '#39404A',
         marginTop: 10,
         fontWeight: '700',
     }
