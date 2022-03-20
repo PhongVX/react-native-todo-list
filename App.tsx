@@ -1,12 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import Splash from './screens/Splash';
-import SignIn from './screens/SignIn';
-import Home from './screens/Home';
-import { ThemeProvider } from './theme';
-import DefaultTheme from './styles/DefaultTheme';
+import Splash from 'src/screens/Splash';
+import SignIn from 'src/screens/SignIn';
+import Home from 'src/screens/Home';
+import { ThemeProvider } from 'src/theme';
+import DefaultTheme from 'src/styles/DefaultTheme';
 
 const Stack = createNativeStackNavigator();
 

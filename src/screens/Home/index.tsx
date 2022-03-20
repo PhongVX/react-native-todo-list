@@ -6,8 +6,9 @@ import {
     ScrollView
 } from 'react-native';
 import {MaterialCommunityIcons, Fontisto, AntDesign} from '@expo/vector-icons'
-import { useTheme } from '../../theme';
+import { useTheme } from 'src/theme';
 import Task from './Task';
+import IconButton from 'src/components/IconButton';
 
 interface HomeProps {
 
@@ -103,6 +104,7 @@ export default function Home(props:HomeProps) {
                 ]}>Tasks</Text>
                 <AntDesign name='plus' size={20} color={theme?.colors.primary} />
             </View>  
+            
             <ScrollView style={
                 [
                     styles.body,
@@ -112,6 +114,7 @@ export default function Home(props:HomeProps) {
                 {
                     tasks.map((task) => <Task task={task} />)
                 }
+                <IconButton> OK <AntDesign name='plus' size={20} color={theme?.colors.primary} /></IconButton>
             </ScrollView>
         </View>
         

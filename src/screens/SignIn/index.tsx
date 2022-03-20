@@ -10,8 +10,8 @@ import { useForm, Controller } from "react-hook-form";
 import { Button, TextInput } from 'react-native-paper';
 import { Feather } from '@expo/vector-icons';
 
-import TextField from '../../components/TextField';
-import { useTheme } from '../../theme';
+import TextField from 'src/components/TextField';
+import { useTheme } from 'src/theme';
 
 interface SignInProps {
     navigation: any

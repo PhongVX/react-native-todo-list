@@ -9,7 +9,7 @@ import AppLoading from 'expo-app-loading';
 import { useFonts, Roboto_900Black } from '@expo-google-fonts/roboto';
 import { Feather } from '@expo/vector-icons';
 
-import { useTheme } from '../../theme';
+import { useTheme } from 'src/theme';
 
 interface SplashProps {
     navigation: any
